@@ -1,0 +1,48 @@
+@import "../../styles/flex.scss";
+@import "../../styles/text.scss";
+
+
+.basement {
+  height: 800px;
+  width: 100%;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: $text;
+
+  .block {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .title_block {
+      width: 30%;
+
+      .social {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+  
+    .title {
+      font-weight: bold;
+      font-size: 18pt;
+      margin-top: 0px;
+    }
+    .text {
+      font-size: 16pt;
+    }
+    .link {
+      text-decoration: none;
+      color: white;
+
+      p {
+        margin: 15 0 0 0;
+      }
+    }
+    .section {
+      width: 15%;
+    }
+  }
+}

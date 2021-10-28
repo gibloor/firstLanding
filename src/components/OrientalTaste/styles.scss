@@ -1,0 +1,35 @@
+@import "../../styles/text.scss";
+@import "../../styles/buttons.scss";
+
+.orientaltaste {
+  height: 650px;
+  width: 100%;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .image {
+    border-radius: 100%;
+    height: 465px;
+  }
+  .block {
+    width: 40%;
+
+    .title {
+      font-family: $title;
+      color: #ffc200;
+      font-size: 80pt;
+      margin: 0px;
+    }
+    .text {
+      font-family: $text;
+      color: white;
+      font-size: 20pt;
+      margin-bottom: 50px;
+    }
+    .button {
+      @include orderButton;
+    }
+  }
+}

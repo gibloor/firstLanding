@@ -1,0 +1,22 @@
+@import "../../styles/text.scss";
+@import "../../styles/flex.scss";
+
+.SenoraFields {
+  @include flexColumn;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 194, 0, 0.7), rgba(255, 194, 0, 0.7)), url("/assets/senorafields/food.png");
+
+  .text {
+    font-family: $text;
+    font-size: 30pt;
+    max-width: 65%;
+    text-align: center;
+  }
+  .title {
+    font-family: $title;
+    font-size: 60pt;
+    margin: 0px;
+  }
+}

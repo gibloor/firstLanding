@@ -1,0 +1,55 @@
+@import "../../styles/text.scss";
+@import "../../styles/flex.scss";
+
+.statistics {
+  height: 625px;
+  width: 100%;
+  background-color: #303030;
+  @include flexColumn;
+  justify-content: space-around;
+  .info {
+    @include flexColumn;
+    .title {
+      font-family: $title;
+      color: #ffc200;
+      font-size: 80pt;
+      margin: 0px;
+    }
+    .text {
+      font-family: $text;
+      color: white;
+      font-size: 18pt;
+      text-align: center;
+      width: 60%;
+      margin: 0px;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+
+    .card {
+      @include flexColumn;
+      justify-content: center;
+      border: 5px solid white;
+      border-radius: 100%;
+      font-family: $text;
+      font-weight: bold;
+      width: 230px;
+      height: 230px;
+
+      .card_number {
+        color: #ffc200;
+        font-size: 40pt;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .card_what {
+        color: white;
+        font-size: 20pt;
+        margin: 0px;
+      }
+    }
+  }
+}

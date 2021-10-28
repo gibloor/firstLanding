@@ -1,0 +1,10 @@
+@mixin orderButton {
+  width: 250px;
+  padding: 21px;
+  background-color: #ffc200;
+  border: none;
+  border-radius: 5px;
+  font-family: $text;
+  font-weight: bold;
+  font-size: 18pt;
+}

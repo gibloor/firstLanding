@@ -1,0 +1,68 @@
+@import "../../../styles/text.scss";
+@import "../../../styles/buttons.scss";
+
+@mixin standard_text {
+  color: white;
+  font-family: $text;
+  font-size: 18pt;
+}
+
+.header_right {
+  display: flex;
+  background-color: #303030;
+  height: 800px;
+  position: absolute;
+  width: 70%;
+  right: 0;
+  color: white;
+
+  .header_block {
+    width: 650px;
+  
+    .header_menu_buttons {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    
+      .header_menu_button {
+        @include standard_text;
+        text-decoration: none;
+      };
+    }
+
+    .header_order {
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+    
+      .header_title {
+        font-size: 90pt;
+        font-family: $title;
+        color: #ffc200;
+        margin-bottom: 0px;
+      }
+      .header_text {
+        @include standard_text;
+        max-width: 100%;
+      }
+      .button_order_now {
+        @include orderButton
+      }
+    }
+  }
+  .magnifier {
+    margin-top: 50px;
+    margin-right: 55px;
+    margin-left: auto;
+    height: 35px;
+    width: 35px;
+    float: right;
+    border: none;
+    background-color: transparent;
+    background-image: url("/assets/header/magnifier.png");
+    background-repeat: no-repeat;
+  }
+}
+
+

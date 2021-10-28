@@ -1,0 +1,42 @@
+@import "../../styles/text.scss";
+@import "../../styles/flex.scss";
+@import "../../styles/buttons.scss";
+
+.subscribe {
+  @include flexColumn;
+  justify-content: center;
+  background-color: #f4f4f4;
+  height: 800px;
+  width: 100%;
+
+  .block {
+    @include flexColumn;
+    justify-content: space-between;
+
+    .title {
+      font-family: $title;
+      font-size: 80pt;
+      margin: 0px;
+    }
+    .text {
+      font-family: $text;
+      font-size: 20pt;
+      width: 65%;
+      text-align: center;
+    }
+    form {
+      input {
+        height: 65px;
+        border: none;
+        padding: none;
+        width: 530px;
+        font-family: $text;
+        font-size: 20pt;
+        padding-left: 20px;
+      }
+      .button {
+        @include orderButton;
+      }
+    }
+  }
+}
